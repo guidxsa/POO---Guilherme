@@ -1,5 +1,4 @@
-nome = input("Digite seu nome: ")
+soma = 5
+soma += 1
 
-idade = input("Digite sua idade: ")
-
-print("Seu nome é:", nome, "\nSua idade é:", idade)
+print(soma)
