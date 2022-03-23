@@ -1,5 +1,6 @@
-nome = input("Digite seu nome: ")
+a = not(12 > 10 or False and not 7 <= 7)
 
-idade = input("Digite sua idade: ")
 
-print("Seu nome é:", nome, "\nSua idade é:", idade)
+
+
+print(a)
