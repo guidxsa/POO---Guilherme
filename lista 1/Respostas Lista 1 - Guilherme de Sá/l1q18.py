@@ -1,19 +1,21 @@
 n = int(input('Digite o número de termos da série: '))
-aux = 1
+numerador = 1
 soma = 0
 
 print('S =',end=' ')
-while aux <= n:
-    m = 1 if aux == 1 else aux + 2
-    soma += aux / n
+while numerador <= n:
+    m = 2 * numerador - 1
+
+    soma += (numerador / m)
+
     print('(',end='')
-    print(aux,'/', m, end='')
+    print(numerador,'/', m, end='')
     print(')',end='')
     
-    if aux < n:
+    if numerador < n:
         print(' + ', end='')
 
-    aux += 1
+    numerador += 1
 
 print(' =', soma)
 
