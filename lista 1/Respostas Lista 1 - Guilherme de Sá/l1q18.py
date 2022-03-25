@@ -3,7 +3,8 @@ numerador = 1
 soma = 0
 
 print('S =',end=' ')
-while numerador <= n:
+
+for numerador in range(1, n + 1):
     m = 2 * numerador - 1
 
     soma += (numerador / m)
@@ -15,7 +16,4 @@ while numerador <= n:
     if numerador < n:
         print(' + ', end='')
 
-    numerador += 1
-
 print(' =', soma)
-

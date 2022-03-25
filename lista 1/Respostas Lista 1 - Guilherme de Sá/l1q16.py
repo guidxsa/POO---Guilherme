@@ -18,7 +18,7 @@ while(preco_produto != 0):
 
 print('O preço total foi de', preco_total)
 
-while 1:
+while True:
     forma_pag = int(input('Digite a forma de pagamento:\n1 - À vista\n2 - Cartão de Crédito\n'))
 
     if forma_pag == 1:
