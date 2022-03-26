@@ -2,25 +2,23 @@ num = int(input('Digite um numero inteiro: '))
 
 if num >= 0:
 
-    aux = num
     fatorial = 1
 
-    print(num, end='')
-    print('! =', end=' ')
+    #print('{}! = '.format(num), end=' ') Quando digitava 0, printava (0! =  = 1) //
+    print('{}!'.format(num), end=' ')
     
-    while aux > 0:
-        fatorial *= aux
+    for i in range(num, 0, -1):
+        if i == num:
+            print('=',end=' ') #Para printar (0! = 1)
 
-        print(aux, end=' ')
-        
-        aux -= 1
-        if aux > 0:
+        fatorial *= i
+
+        print(i, end=' ')
+
+        if i > 1:
             print('*', end=' ')
-        else:
-            print('=', end= ' ')
-            
 
-    print(fatorial)
+    print('= {}'.format(fatorial))
 
 else:
     print('Valor inválido!') 

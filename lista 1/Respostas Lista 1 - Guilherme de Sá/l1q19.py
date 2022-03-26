@@ -4,9 +4,9 @@ a = n ** 0.5
 
 for contador in range(1, n + 1):
     if contador < a < contador + 1:
-        a = (contador + contador + 1)/2
+        a = contador + 0.5
         break
-    elif a == contador or a == contador + 1:
+    elif a == contador:
         break
 
 x = a ** 2 - n
@@ -16,11 +16,10 @@ if x < 0:
 
 
 while x > 0.0001:
-    a = (a - 1 + (n / (a - 1))) / 2
+    a = (a + (n / a)) / 2
     x = a ** 2 - n
     
     if x < 0:
         x = -x
 
-print('A raiz quadrada de', n,'é', a)
-    
+print('A raiz quadrada de {} é {}'.format(n, a))

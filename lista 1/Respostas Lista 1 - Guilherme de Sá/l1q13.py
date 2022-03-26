@@ -1,26 +1,29 @@
 n = int(input('Digite um número inteiro "n": '))
-cont = 0
+restante = n
+
+minimo = 0
 
 if n > 0:
-    while n > 0:
-        if n // 100 >= 1:
-            n -= 100
 
-        elif n // 50 >= 1:
-            n -= 50
+    while restante > 0:
+        if restante // 100 >= 1:
+            restante -= 100
 
-        elif n // 10 >= 1:
-            n -= 10
+        elif restante // 50 >= 1:
+            restante -= 50
 
-        elif n // 5 >= 1:
-            n -= 5
+        elif restante // 10 >= 1:
+            restante -= 10
+
+        elif restante // 5 >= 1:
+            restante -= 5
 
         else:
-            n -= 1
+            restante -= 1
 
-        cont += 1
+        minimo += 1
 
-    print('A quantidade mínima de notas é ',cont)
+    print('A quantidade mínima de notas para obter R${} é de {}'.format(n, minimo))
 
 else:
     print('Opção inválida!')

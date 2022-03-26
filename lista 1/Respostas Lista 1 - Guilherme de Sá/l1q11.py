@@ -21,7 +21,7 @@ if opcao_tipo == 1 or opcao_tipo == 2 or opcao_tipo == 3:
 
     valor_final = valor_total - valor_desc
 
-    print('\t\tCUPOM FISCAL\n\nTipo de Carne: ', end='')
+    print('\t\tCUPOM FISCAL\n\nTipo de Carne:', end=' ')
     if opcao_tipo == 1:
         print('Filé Duplo')
     elif opcao_tipo == 2:
@@ -29,17 +29,17 @@ if opcao_tipo == 1 or opcao_tipo == 2 or opcao_tipo == 3:
     else:
         print('Picanha')
 
-    print('Quantidade de Carne:',quantidade,'kg')
-    print('Preço Total: R$', valor_total)
+    print('Quantidade de Carne: {} kg'.format(quantidade))
+    print('Preço Total: R${0:.2f}'.format(valor_total))
 
-    print('Tipo de Pagamento: ', end='')
+    print('Tipo de Pagamento:', end=' ')
     if meio_pag == 1:
         print('Cartão do Supermercado')
     else:
         print('Outro')
 
-    print('Valor do Desconto: R$', valor_desc)
-    print('Valor a Pagar: R$', valor_final)
+    print('Valor do Desconto: R${0:.2f}'.format(valor_desc))
+    print('Valor a Pagar: R${0:.2f}'.format(valor_final))
     
 else:
     print('Opção Inválida!')

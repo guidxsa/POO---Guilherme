@@ -9,19 +9,19 @@ trabalhou = input('\tJá trabalhou com a vítima? ')
 sims = 0
 
 if telefonou == 'sim':
-    sims = sims + 1
+    sims += 1
 
 if esteve == 'sim':
-    sims = sims + 1
+    sims += 1
 
 if mora_perto == 'sim':
-    sims = sims + 1
+    sims += 1
 
 if devia == 'sim':
-    sims = sims + 1
+    sims += 1
 
 if trabalhou == 'sim':
-    sims = sims + 1
+    sims += 1
 
 if sims == 5:
     print('\nEle é um ASSASSINO!')

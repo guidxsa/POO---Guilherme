@@ -6,7 +6,7 @@ if distancia >= 0:
 
     preco_passagem = distancia * taxa
 
-    print('A passagem custou R$', preco_passagem)
+    print('A passagem custou R${0:.2f}'.format(preco_passagem))
 
 else:
     print('Valor inválido!')

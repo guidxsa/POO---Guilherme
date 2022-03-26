@@ -26,7 +26,7 @@ if (tipo_instal == 'R' or tipo_instal == 'I' or tipo_instal == 'C') and quant_co
     
     preco_final = quant_consumo * preco
 
-    print('O gasto total foi de R$', preco_final)
+    print('O gasto total foi de R${0:.2f}'.format(preco_final))
 
 else:
     print('Opção Inválida!')

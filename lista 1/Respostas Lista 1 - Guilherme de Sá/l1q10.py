@@ -6,7 +6,7 @@ if parcelas > 0:
     valor_mes = valor_imovel / parcelas
 
     if valor_mes <= 0.3 * salario:
-        print('O valor da prestação é de R$', valor_mes)
+        print('O valor da prestação é de R${0:.2f}'.format(valor_mes))
 
     else:
         print('Financiamento não aprovado!')

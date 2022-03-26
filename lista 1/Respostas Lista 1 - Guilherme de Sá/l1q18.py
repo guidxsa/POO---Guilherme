@@ -9,11 +9,9 @@ for numerador in range(1, n + 1):
 
     soma += (numerador / m)
 
-    print('(',end='')
-    print(numerador,'/', m, end='')
-    print(')',end='')
+    print('({}/{})'.format(numerador, m), end=' ')
     
     if numerador < n:
-        print(' + ', end='')
+        print('+', end=' ')
 
-print(' =', soma)
+print('=', soma)
