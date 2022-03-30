@@ -1,5 +1,5 @@
 n = int(input('Digite o número que deseja saber a raiz quadrada: '))
-a = int(input('Digite uma aproximção a0 da raiz quadrada desse número: '))
+a = float(input('Digite uma aproximção a0 da raiz quadrada desse número: '))
 
 if n < 0:
     print('Valor inválido de n')
