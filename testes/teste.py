@@ -1,9 +1,5 @@
-x = 1
-soma = 0
+valores = [10,20,30,40,50]
+valores.pop()
 
-while x <= 1000:
-    if x % 2 == 1:
-        soma += x
-    x += 1
 
-print('A soma é = ', soma)
+print(valores)
