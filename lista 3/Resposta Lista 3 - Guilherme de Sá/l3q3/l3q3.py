@@ -25,15 +25,12 @@ dict[3] = 'Gohan'
 dict[4] = 'Broly'
 dict[5] = 'Freeza'
 
-print(linhas)
 
 for i in range (len(linhas)):
     linhas[i] = linhas[i].replace('\\n', '')
     linhas[i] = int(linhas[i])
 
 lista_modal = [linhas.count(1), linhas.count(2), linhas.count(3), linhas.count(4), linhas.count(5)]
-
-print(lista_modal)
 
 for i in range (5):
     if lista_modal[i] == max(lista_modal):
@@ -44,5 +41,3 @@ for i in range (5):
 print('Candidato mais votado: {} com {} votos'.format(dict[mais_votos], linhas.count(mais_votos)))
 print('Candidato menos votado: {} com {} votos'.format(dict[menos_votos], linhas.count(menos_votos)))
 print('Quantidade de votos nulos: {}'.format(nulo))
-
-
