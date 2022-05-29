@@ -1,0 +1,11 @@
+Usuario			Espaco utilizado		% do uso
+1	Alexandre			435.01MB			13.24%
+2	Anderson			1188.02MB			36.15%
+3	Antonio			117.74MB			3.58%
+4	Carlos			87.03MB			2.65%
+5	Cesar			0.94MB			0.03%
+6	Rosemary			752.90MB			22.91%
+7	Gerson			704.88MB			21.45%
+
+
+Espaco total ocupado: 3286.52MB

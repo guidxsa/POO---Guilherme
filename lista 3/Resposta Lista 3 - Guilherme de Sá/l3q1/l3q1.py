@@ -17,7 +17,4 @@ while True:
         break
         
 
-print(ocorrencia)
-
-
-
+print('A palavra aparece no arquivo {} vezes'.format(ocorrencia))
