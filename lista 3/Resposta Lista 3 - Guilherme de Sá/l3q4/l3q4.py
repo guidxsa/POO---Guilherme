@@ -9,9 +9,6 @@ def copia_texto(texto, texto_cop):
                 conteudo += linhas[i]
         
         texto_cop.write(conteudo)
-    with open ('texto_cop.txt', 'r') as texto_cop:
-        conteudo_cop = texto_cop.read()
-    print(conteudo_cop)
 
 with open ('texto.txt', 'r') as texto:
     pass

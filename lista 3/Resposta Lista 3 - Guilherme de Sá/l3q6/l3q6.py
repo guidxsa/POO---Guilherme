@@ -2,8 +2,7 @@ with open('pontuacoes.csv', 'r') as arq:
     lista_nomes = []
     lista_numeros = []
 
-    linha_1 = arq.readline(5)
-    removerl1 = arq.readline()
+    arq.readline()
     linhas = arq.readlines()
 
     for i in range(len(linhas)):
@@ -46,6 +45,6 @@ for n in range (len(tuple_dict)):
     valores.append(dict.get(tuple_dict[n]))
 
 with open('maiores_pontuacoes.csv','w') as arq_novo:
-    arq_novo.write(linha_1 + 'maior pontuacao\n')
+    arq_novo.write('nome;maior pontuacao\n')
     for o in range (len(tuple(dict))):
         arq_novo.write(tuple_dict[o] + ';' + str(valores[o]) + '\n')

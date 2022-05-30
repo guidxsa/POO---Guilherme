@@ -23,4 +23,5 @@ with open ('relatorio.txt', 'w') as arq_novo:
     arq_novo.write('Usuario\t\t\tEspaco utilizado\t\t% do uso\n')
     for i in range (len(linhas)):
         arq_novo.write('{}\t'.format(i+1) + lista_pessoas[i] + '\t\t\t{:.2f}MB\t\t\t'.format(lista_bytes[i]) + '{:.2f}%\n'.format(100 * lista_bytes[i]/total))
-    arq_novo.write('\n\n' + 'Espaco total ocupado: {:.2f}MB'.format(total))
+    arq_novo.write('\n\n' + 'Espaco total ocupado: {:.2f}MB\n'.format(total))
+    arq_novo.write('Espaco medio ocupado: {:.2f}'.format(total / len(lista_pessoas)))

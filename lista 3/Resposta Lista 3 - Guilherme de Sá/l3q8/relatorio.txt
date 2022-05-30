@@ -9,3 +9,4 @@ Usuario			Espaco utilizado		% do uso
 
 
 Espaco total ocupado: 3286.52MB
+Espaco medio ocupado: 469.50

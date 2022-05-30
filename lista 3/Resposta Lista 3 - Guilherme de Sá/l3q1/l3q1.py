@@ -1,10 +1,8 @@
 nome_arquivo = input('Digite o nome do arquivo que deseja abrir: ')
 palavra_arquivo = input('Digite a palavra que deseja procurar no arquivo: ')
 
-arquivo = open(nome_arquivo, 'r')
-conteudo = arquivo.read()
-
-arquivo.close()
+with open(nome_arquivo, 'r') as arquivo:
+    conteudo = arquivo.read()
 
 ocorrencia = 0
 i = 0
@@ -16,5 +14,4 @@ while True:
     else:
         break
         
-
 print('A palavra aparece no arquivo {} vezes'.format(ocorrencia))
